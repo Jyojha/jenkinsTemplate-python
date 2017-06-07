@@ -5,7 +5,12 @@ class Solution(object):
         :rtype: int
         """
 
-        # your solution here
+        nums.sort()
+        l = len(nums)
+        sum = 0
 
-        return 4
+        for i in range(0,l,2):
+        	sum = sum + nums[i]
+
+        return sum
 
